@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worklogs | CS371 Group 2</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 20px 30px;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+    nav {
+      background: #2b5a8a;
+      margin: -20px -30px 30px -30px;
+      padding: 10px 30px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 18px;
+      font-family: Arial, sans-serif;
+      font-size: 0.95em;
+    }
+    nav a:hover { text-decoration: underline; }
+    h1 { color: #2b5a8a; border-bottom: 2px solid #2b5a8a; padding-bottom: 6px; }
+    h2 { color: #2b5a8a; margin-top: 2em; }
+    .member-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 1.2em;
+    }
+    .member-card {
+      border: 1px solid #c8d8e8;
+      border-top: 4px solid #2b5a8a;
+      padding: 16px 18px;
+      border-radius: 2px;
+    }
+    .member-card h3 { margin: 0 0 6px 0; font-size: 1.05em; color: #2b5a8a; }
+    .member-card p  { margin: 0 0 10px 0; font-size: 0.88em; color: #555; font-family: Arial, sans-serif; }
+    .member-card a  {
+      font-family: Arial, sans-serif;
+      font-size: 0.9em;
+      color: #2b5a8a;
+      font-weight: bold;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 1em;
+      font-family: Arial, sans-serif;
+      font-size: 0.92em;
+    }
+    th {
+      background: #2b5a8a;
+      color: #fff;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    td {
+      padding: 7px 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(even) { background: #f5f8fb; }
+    footer {
+      margin-top: 3em;
+      padding-top: 12px;
+      border-top: 1px solid #ccc;
+      font-size: 0.85em;
+      color: #555;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">The Project</a>
+  <a href="goals.html">Goals &amp; Results</a>
+  <a href="code.html">The Code</a>
+  <a href="logs.html">Worklogs</a>
+  <a href="media.html">Media</a>
+</nav>
+
+<h1>Member Worklogs</h1>
+
+<p>
+  Each team member kept their own worklog documenting meeting attendance, hours
+  contributed, and work completed. Click a name below to view their full log.
+</p>
+
+<div class="member-grid">
+
+  <div class="member-card">
+    <h3>Owen Kamm</h3>
+    <p>Total hours: 16.5 hrs</p>
+    <a href="owenLog.html">View worklog &rarr;</a>
+  </div>
+
+  <div class="member-card">
+    <h3>Priyanshu Pyakurel</h3>
+    <p>Total hours: [X] hrs</p>
+    <a href="priLog.html">View worklog &rarr;</a>
+  </div>
+
+  <div class="member-card">
+    <h3>William Rollo</h3>
+    <p>Total hours: [X] hrs</p>
+    <a href="willLog.html">View worklog &rarr;</a>
+  </div>
+
+  <div class="member-card">
+    <h3>Darshan Aryal</h3>
+    <p>Total hours: [X] hrs</p>
+    <a href="darshanLog.html">View worklog &rarr;</a>
+  </div>
+
+  <div class="member-card">
+    <h3>Marko Tsymbaliuk</h3>
+    <p>Total hours: [X] hrs</p>
+    <a href="markoLog.html">View worklog &rarr;</a>
+  </div>
+
+</div>
+
+<h2>Combined Hours Summary</h2>
+<table>
+  <thead>
+    <tr><th>Member</th><th>Total Hours</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Owen Kamm</td><td>16.5 hrs</td></tr>
+    <tr><td>Priyanshu Pyakurel</td><td>[X] hrs</td></tr>
+    <tr><td>William Rollo</td><td>[X] hrs</td></tr>
+    <tr><td>Darshan Aryal</td><td>[X] hrs</td></tr>
+    <tr><td>Marko Tsymbaliuk</td><td>[X] hrs</td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>[X] hrs</strong></td></tr>
+  </tbody>
+</table>
+
+<footer>
+  CS371 &mdash; Gettysburg College &mdash; Spring 2025 &mdash; Group 2
+</footer>
+
+</body>
+</html>

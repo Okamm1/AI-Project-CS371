@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goals &amp; Results | CS371 Group [#]</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 20px 30px;
+      background: #f7f9fc;
+      color: #222;
+      line-height: 1.7;
+    }
+    nav {
+      background: #2b5a8a;
+      margin: -20px -30px 36px -30px;
+      padding: 10px 30px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 18px;
+      font-family: Arial, sans-serif;
+      font-size: 0.95em;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    h1 {
+      color: #2b5a8a;
+      border-bottom: 2px solid #2b5a8a;
+      padding-bottom: 8px;
+      margin-bottom: 0.4em;
+    }
+    h2 {
+      color: #2b5a8a;
+      margin-top: 2.2em;
+      margin-bottom: 0.6em;
+      font-size: 1.2em;
+      letter-spacing: 0.01em;
+    }
+
+    /* ── Goal cards ── */
+    .goal-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .goal-list li {
+      background: #fff;
+      border: 1px solid #dce6f0;
+      border-left: 5px solid #2b5a8a;
+      border-radius: 3px;
+      padding: 14px 18px;
+      margin: 0;
+    }
+    .goal-list li .label {
+      font-family: Arial, sans-serif;
+      font-size: 0.78em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #2b5a8a;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* ── Results ── */
+    .result-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .result-list li {
+      background: #fff;
+      border: 1px solid #dce6f0;
+      border-radius: 3px;
+      padding: 13px 18px;
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .result-list .goal-name {
+      font-family: Arial, sans-serif;
+      font-size: 0.93em;
+      font-weight: bold;
+      min-width: 180px;
+      flex-shrink: 0;
+    }
+    .badge {
+      font-family: Arial, sans-serif;
+      font-size: 0.78em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 3px 9px;
+      border-radius: 12px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .badge.achieved      { background: #e4f4e4; color: #1a6e1a; }
+    .badge.partial       { background: #fef4e2; color: #8a5c00; }
+    .badge.not-achieved  { background: #fde8e8; color: #9a1a1a; }
+    .result-notes {
+      font-size: 0.91em;
+      color: #444;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    /* ── Lessons & Future ── */
+    .plain-list {
+      padding-left: 1.3em;
+      margin: 0.4em 0 0 0;
+    }
+    .plain-list li {
+      margin-bottom: 0.55em;
+    }
+
+    footer {
+      margin-top: 3.5em;
+      padding-top: 12px;
+      border-top: 1px solid #ccc;
+      font-size: 0.85em;
+      color: #666;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">The Project</a>
+  <a href="goals.html">Goals &amp; Results</a>
+  <a href="code.html">The Code</a>
+  <a href="logs.html">Worklogs</a>
+  <a href="media.html">Media</a>
+</nav>
+
+<h1>Goals &amp; Results</h1>
+
+<h2>Statement of Goals</h2>
+<p>
+  At the start of the project, we identified the following goals for improving
+  upon the baseline line-following code provided with the PiCar-X API examples:
+</p>
+
+<ul class="goal-list">
+  <li>
+    <span class="label">Learn to connect to the PiCar robot</span>
+    Our first goal was simple: we needed to connect to our PiCar robot! Our group accomplished this in many different ways. Initially, progress was slow. We had to connect the robot to a monitor, keyboard and mouse every time we wanted to use it. However, we eventually figured out some workarounds which allowed us to connect to the robot extremely quickly with screen-mirroring software or the raspberry pi operating system. We also figured out how to streamline our development by doing most of our coding on our personal devices, and then doing and SSH into the pi with Cyberduck.
+  </li>
+  <li>
+    <span class="label">Test and understand the hardware we're working with</span>
+    Once we were familiar with the pi operating system, we wanted to test our hardware. To do this, we created several different hardware test files which tested the functionality of the sensor, camera and wheels of the robot.
+  </li>
+  <li>
+    <span class="label">Begin the robot's calibration</span>
+    Our next step was getting the robot ready for our final line-following program. We constructed an early draft of our calibration file, which specifically focused on providing a consistent, reliable basis for our robot to run our future line-following alrogithm.
+  </li>
+  <li>
+    <span class="label">Develop and test a successful line-following program</span>
+    Our last goal was the biggest. In this one, we took all of the knowledge we had gained over the course of the project and creatd a successful line-following program, which recognizes 90-degree turns and intersections. 
+  </li>
+</ul>
+
+<h2>Results</h2>
+
+<ul class="result-list">
+  <li>
+    <span class="goal-name">Goal 1: Learn to connect</span>
+    <span class="badge achieved">Achieved</span>
+    <span class="result-notes">We learned to effectively connect and use our robot's software</span>
+  </li>
+  <li>
+    <span class="goal-name">Goal 2: Test hardware</span>
+    <span class="badge achieved">Achieved</span>
+    <span class="result-notes">We conducted multiple thorough tests of the hardware functionality</span>
+  </li>
+  <li>
+    <span class="goal-name">Goal 3: Calibrate robot</span>
+    <span class="badge achieved">Achieved</span>
+    <span class="result-notes">We provided a basic calibration for our robot to run our future programs</span>
+  </li>
+  <li>
+    <span class="goal-name">Goal 4: Implement line following</span>
+    <span class="badge achieved">Achieved</span>
+    <span class="result-notes">We completed effective line-following code on our robot which can handle sharp turns and intersections</span>
+  </li>
+</ul>
+
+
+<footer>
+  CS371 &mdash; Gettysburg College &mdash; Spring 2025 &mdash; Group 3
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Code | CS371 Group [#]</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 20px 30px;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+    nav {
+      background: #2b5a8a;
+      margin: -20px -30px 30px -30px;
+      padding: 10px 30px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 18px;
+      font-family: Arial, sans-serif;
+      font-size: 0.95em;
+    }
+    nav a:hover { text-decoration: underline; }
+    h1 { color: #2b5a8a; border-bottom: 2px solid #2b5a8a; padding-bottom: 6px; }
+    h2 { color: #2b5a8a; margin-top: 2em; }
+    h3 { margin-top: 1.4em; }
+    pre {
+      background: #f0f4f8;
+      border: 1px solid #c8d8e8;
+      border-left: 4px solid #2b5a8a;
+      padding: 14px 16px;
+      overflow-x: auto;
+      font-size: 0.88em;
+      line-height: 1.5;
+    }
+    code { font-family: "Courier New", Courier, monospace; }
+    p code {
+      background: #eef2f6;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-size: 0.92em;
+    }
+    .file-link {
+      display: inline-block;
+      background: #2b5a8a;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.9em;
+      margin: 6px 0;
+    }
+    .file-link:hover { background: #1d4068; }
+    footer {
+      margin-top: 3em;
+      padding-top: 12px;
+      border-top: 1px solid #ccc;
+      font-size: 0.85em;
+      color: #555;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">The Project</a>
+  <a href="goals.html">Goals &amp; Results</a>
+  <a href="code.html">The Code</a>
+  <a href="logs.html">Worklogs</a>
+  <a href="media.html">Media</a>
+</nav>
+
+<h1>The Code</h1>
+
+<p>
+  All source files are available for download below. The main improvement script
+  is <code>line_follow_improved.py</code>. The original baseline script from the
+  API examples directory is also included for comparison.
+</p>
+
+<h2> Our hardware testing files are below
+</h2>
+
+<p>
+  Early on in development, our main focus was testing the hardware's functionality and familiarizing ourselves with the python PiCar commands. These next three files demostrate our simple hardware tests of the camera, the color sense (for line following use later), and the wheels and steering.
+</p>
+
+<h2> Camera hardware test file:
+  </h2>
+<p>
+  <a class="file-link" href="tests/camera-test.py">&#8595; camera-test.py</a>
+</p>
+
+<h2> Sensor hardware test file:
+  </h2>
+<p>
+  <a class="file-link" href="tests/sensor-test.py">&#8595; sensor-test.py</a>
+</p>
+
+<h2> Wheels/steering hardware test file:
+  </h2>
+<p>
+  <a class="file-link" href="tests/wheel-test.py">&#8595; wheel-test.py</a>
+</p>
+
+
+<h2>Calibration</h2>
+<p>
+  Next, our focus was on the calibration step of the robot. This step is essential to the precise functionality of the robot. The biggest step here was centering the steering servo by zeroing the angle, and similarly centering the pan and tilt of the camera. The file below is focused entirely on this early step, no line-following yet. 
+</p>
+
+<h2> Early calibration file: (no line following)
+  </h2>
+<p>
+  <a class="file-link" href="calibration/calibration1.py">&#8595; calibration1.py</a>
+</p>
+
+
+<h2>Tuning Notes</h2>
+<p>
+  For any future teams working with this robot, we highly reccommend testing the functionality of the hardware before you begin. We encountered some serious roadblocks with connecting to the robot, as well as with the hardware. Our robot tended to drift while intending to drive straight, an error we had to address before we could begin any line-following.
+</p>
+
+<footer>
+  CS371 &mdash; Gettysburg College &mdash; Spring 2025 &mdash; Group [#]
+</footer>
+
+</body>
+</html>

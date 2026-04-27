@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media | CS371 Group [#]</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 20px 30px;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+    nav {
+      background: #2b5a8a;
+      margin: -20px -30px 30px -30px;
+      padding: 10px 30px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 18px;
+      font-family: Arial, sans-serif;
+      font-size: 0.95em;
+    }
+    nav a:hover { text-decoration: underline; }
+    h1 { color: #2b5a8a; border-bottom: 2px solid #2b5a8a; padding-bottom: 6px; }
+    h2 { color: #2b5a8a; margin-top: 2em; }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 1em;
+    }
+    .photo-grid figure {
+      margin: 0;
+      border: 1px solid #ddd;
+    }
+    .photo-grid img {
+      width: 100%;
+      display: block;
+    }
+    .photo-grid figcaption {
+      padding: 6px 8px;
+      font-size: 0.83em;
+      font-family: Arial, sans-serif;
+      color: #555;
+      background: #f5f5f5;
+    }
+    .clip-list { padding-left: 1.4em; }
+    .clip-list li { margin-bottom: 0.5em; }
+    footer {
+      margin-top: 3em;
+      padding-top: 12px;
+      border-top: 1px solid #ccc;
+      font-size: 0.85em;
+      color: #555;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">The Project</a>
+  <a href="goals.html">Goals &amp; Results</a>
+  <a href="code.html">The Code</a>
+  <a href="logs.html">Worklogs</a>
+  <a href="media.html">Media</a>
+</nav>
+
+<h1>Video Clips</h1>
+
+<ul class="clip-list">
+  <li>
+    <strong>A smooth line-following test, in which the robot fell out of the line at the 90º turn:</strong>
+    <!-- Option A: link to a local video file -->
+    <a href="media/video1.mp4">video1.mp4</a>
+    <!-- Option B: embed a YouTube link -->
+    <!-- <a href="https://youtu.be/XXXX" target="_blank">Watch on YouTube</a> -->
+  </li>
+  <li>
+    <strong>[Clip 2 — e.g., 90-degree turn]:</strong>
+    <a href="media/clip2.mp4">[clip2.mp4]</a>
+  </li>
+  <li>
+    <strong>[Clip 3 — e.g., Intersection decision]:</strong>
+    <a href="media/clip3.mp4">[clip3.mp4]</a>
+  </li>
+  <!-- Add more clips as needed -->
+</ul>
+
+<footer>
+  CS371 &mdash; Gettysburg College &mdash; Spring 2025 &mdash; Group 2
+</footer>
+
+</body>
+</html>
